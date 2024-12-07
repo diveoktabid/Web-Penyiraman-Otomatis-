@@ -1,0 +1,151 @@
+/* Gaya untuk mode gelap */
+body {
+    font-family: 'Roboto', sans-serif; /* Font modern */
+    background-color: #121212; /* Warna gelap */
+    color: #f5f5f5; /* Teks warna terang */
+    padding: 20px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #1e1e1e, #252525); /* Gradien lembut */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Bayangan halus */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Efek hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Teks judul utama */
+.container h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4CAF50; /* Tetap warna hijau */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Efek bayangan */
+}
+
+/* Data sensor */
+.sensor-data {
+    margin-bottom: 30px; /* Jarak antara bagian sensor dan lainnya */
+    padding: 20px;
+    background: linear-gradient(145deg, #424242, #565656); /* Gradien gelap lebih halus */
+    border-radius: 15px;
+    border: 1px solid #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Jarak antar data sensor */
+}
+
+.sensor-data p {
+    font-size: 18px;
+    color: #e0e0e0; /* Warna teks lebih terang */
+    margin: 0; /* Menghilangkan margin default */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang data sensor dengan transparansi */
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+.sensor-data p:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efek hover */
+}
+
+/* Memperindah teks di dalam data sensor */
+.sensor-data p span {
+    font-weight: 600;
+    color: #BB86FC; /* Warna ungu untuk nilai */
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .sensor-data {
+        padding: 15px;
+    }
+    .sensor-data p {
+        font-size: 16px;
+    }
+}
+
+
+.sensor-data p {
+    margin: 8px 0;
+    font-size: 18px;
+    color: #e0e0e0; /* Teks lebih terang */
+}
+
+/* Tombol */
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.3);
+}
+
+button.btn-success {
+    background: linear-gradient(145deg, #4CAF50, #45A047); /* Gradien hijau */
+    color: #fff;
+}
+
+button.btn-success:hover {
+    background: linear-gradient(145deg, #45A047, #4CAF50);
+    transform: scale(1.05); /* Sedikit membesar */
+}
+
+button.btn-danger {
+    background: linear-gradient(145deg, #D32F2F, #C62828); /* Gradien merah */
+    color: #fff;
+}
+
+button.btn-danger:hover {
+    background: linear-gradient(145deg, #C62828, #D32F2F);
+    transform: scale(1.05);
+}
+
+/* Grafik */
+.chart-container {
+    padding: 25px;
+    background: linear-gradient(145deg, #292929, #343434); /* Gradien gelap */
+    border: 1px solid #444;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 40px; /* Jarak antara tombol dan grafik */
+}
+
+.chart-container h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #BB86FC; /* Warna ungu */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Efek transisi global */
+* {
+    transition: all 0.3s ease;
+}
